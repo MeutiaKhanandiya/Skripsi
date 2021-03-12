@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "Hello! this is the main page <h1>HELLO<h1>"
+    return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug= True)
